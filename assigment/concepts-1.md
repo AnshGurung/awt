@@ -73,7 +73,7 @@ These are used to add styling to the selected tags.
     git init
     ```
 
-2. **add**: This command is used to add changed files and folders. `git add .` adds all changed files or mentioning file names will only adds specfic files.
+2. **add**: This command is used to add changed files and folders. `git add .` adds all changed files or mentioning file names will only add specfic files.
     ```bash
     git add fileName
     ```
@@ -98,7 +98,7 @@ These are used to add styling to the selected tags.
     git clone repository-url
     ```
 
-7. branch: In Git, branches are the copies of the project where multiple people can work together without affecting one another. `git branch` is used to create a new branch.
+7. **branch**: In Git, branches are the copies of a project where multiple people can work together without affecting one another. `git branch` is used to create a new branch.
     ```bash
     git branch branch-name
     ```
