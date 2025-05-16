@@ -55,7 +55,7 @@ These are used to add styling to the selected tags.
 
 3. **Class selector**: Selects all the elements of specified class.
     ```css
-    .hover{
+    .operator-button{
         background-color: red;
     }
     ```
