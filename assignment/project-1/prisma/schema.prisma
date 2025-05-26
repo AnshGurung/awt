@@ -16,6 +16,5 @@ datasource db {
 model Task {
   id        String   @id @default(auto()) @map("_id") @db.ObjectId
   text      String
-  status    Boolean
   createdAt DateTime @default(now())
 }

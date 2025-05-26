@@ -11,10 +11,10 @@ app.use(cors());
 app.use(express.json());
 
 app.post('/task', async (req, res) => {
-    const { text, status } = req.body;
+    const { text } = req.body;
     try {
         const newTask = await prisma.task.create({
-            data: { text, status },
+            data: { text },
         });
         res.json(newTask);
     } catch (e) {
