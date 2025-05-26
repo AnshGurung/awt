@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h3>To do</h3>
+    <ul id="taskList"></ul>
+    <script>
+        const baseUrl = "http://localhost:3000";
+
+        async function fetchTask() {
+            try {
+                response = fetch(`${baseUrl}/task`);
+
+                const taskList = document.getElementById('taskList');
+                taskList.innerHTML = '';
+
+                tasks.forEach(task => {
+                    const li = document.createElement('li');
+                    li.textContent = `${task.text}`;
+                    taskList.appendChild(li);
+                })
+            } catch (e) {
+                alert(e);
+            }
+        }
+    </script>
+</body>
+
+</html>
